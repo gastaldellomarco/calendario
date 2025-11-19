@@ -1,0 +1,31 @@
+﻿
+
+files         : @{Docenti List Page=; Materie List Page=; Aule List Page=; Classi List Page=; Sedi List Page=; Academic Years=; Closure Days=; Room 
+                Form (NEW)=; Location Form (NEW)=; Class Form=; Closure Form (NEW)=; Room Availability (NEW)=; Docenti API=; Materie API=; Aule 
+                API=; Classi API=; Database Config=; Header Template=; Footer Template=}
+scanned_files : @{algorithm/CalendarioGenerator.php=; algorithm/ConflittiDetector.php=; algorithm/SostitutoFinder.php=; 
+                algorithm/SuggerimentiRisoluzione.php=; algorithm/VincoliValidator.php=; api/aule_api.php=; api/calendario_api.php=; 
+                api/classi_api.php=; api/conflitti_api.php=; api/docenti_api.php=; api/export_docenti.php=; api/genera_api.php=; 
+                api/materie_api.php=; api/notifiche_api.php=; api/orari_api.php=; api/segna_notifica_letta.php=; api/sostituzioni_api.php=; 
+                api/vincoli_api.php=; assets/css/calendario.css=; assets/js/calendario.js=; assets/js/calendario_modifica.js=; assets/js/classi.js=; 
+                assets/js/docenti.js=; assets/js/docenti_form.js=; assets/js/materie.js=; auth/login.php=; auth/logout.php=; 
+                auth/process_login.php=; auth/register.php=; components/calendario_docente_mensile.php=; 
+                components/calendario_docente_settimanale.php=; components/calendario_docente_widget.php=; components/calendario_settimanale.php=; 
+                components/lezione_card.php=; components/notification_widget.php=; cron/check_conflitti.php=; cron/notifiche_giornaliere.php=; 
+                data/test_generazione.php=; includes/NotificheManager.php=; includes/SostituzioniManager.php=; includes/auth_check.php=; 
+                includes/footer.php=; includes/functions.php=; includes/header.php=; pages/anni_scolastici.php=; pages/assegna_materie_classe.php=; 
+                pages/aula_disponibilita.php=; pages/aula_form.php=; pages/aule.php=; pages/calendario.php=; pages/calendario_modifica.php=; 
+                pages/classe_form.php=; pages/classi.php=; pages/conflitti.php=; pages/disponibilita_docenti.php=; pages/docente_edit.php=; 
+                pages/docente_form.php=; pages/docente_materie.php=; pages/docenti.php=; pages/genera_calendario.php=; pages/giorni_chiusura.php=; 
+                pages/giorni_chiusura_form.php=; pages/materie.php=; pages/notifiche.php=; pages/orari_slot.php=; pages/percorsi.php=; 
+                pages/pulisci_calendario.php=; pages/risolvi_conflitto.php=; pages/sedi.php=; pages/sedi_form.php=; pages/sostituzioni.php=; 
+                pages/trova_sostituto.php=; pages/vincoli_docente.php=; reports/sostituzioni_report.php=; templates/email_giornaliera.html=}
+code_quality  : @{warnings=; debug_patterns=}
+assets        : @{missing_references=System.Object[]}
+database      : @{connection=; tables=; admins=System.Object[]}
+permissions   : @{Data Directory=; Uploads=; Data Root=}
+system        : @{config=; htaccess=; db_conf=; php_version=; extensions=; composer=; node=}
+errors        : @{critical_patterns=}
+
+
+
