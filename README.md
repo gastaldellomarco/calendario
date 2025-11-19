@@ -42,9 +42,6 @@ Default Admin: username=admin, password=password (bcrypt hashed)
 **1. Database Setup**
 
 ```sql
--- Import the schema
-mysql -u root -p scuola_calendario < scuola_db_v2.sql
-
 -- Create active academic year
 INSERT INTO anni_scolastici (anno, data_inizio, data_fine, attivo, settimane_lezione)
 VALUES ('2024-2025', '2024-09-01', '2025-06-30', 1, 33);
