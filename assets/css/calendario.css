@@ -1,0 +1,255 @@
+/* Calendario Styles - Versione Completa */
+
+/* Tab Styles */
+.tab-active {
+    border-bottom-color: #3b82f6 !important;
+    color: #2563eb !important;
+}
+
+.tab-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Lezione Card Styles */
+.lezione-card {
+    transition: all 0.2s ease-in-out;
+    border-left-width: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+.lezione-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Calendar Grid Styles */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 1fr);
+    gap: 1px;
+    background-color: #e5e7eb;
+}
+
+.calendar-header {
+    background-color: #f9fafb;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+}
+
+.calendar-cell {
+    background-color: white;
+    min-height: 80px;
+    padding: 0.25rem;
+}
+
+.calendar-cell.today {
+    background-color: #dbeafe;
+}
+
+.calendar-cell.weekend {
+    background-color: #f9fafb;
+}
+
+.calendar-time {
+    background-color: #f9fafb;
+    font-weight: 500;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* Calendario Mensile */
+.month-calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #e5e7eb;
+}
+
+.month-day {
+    background-color: white;
+    min-height: 120px;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.month-day.other-month {
+    background-color: #f9fafb;
+    color: #9ca3af;
+}
+
+.month-day.today {
+    background-color: #dbeafe;
+    border: 2px solid #3b82f6;
+}
+
+.month-day.weekend {
+    background-color: #f9fafb;
+}
+
+.month-day-header {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.month-events {
+    display: 0.25rem;
+}
+
+.month-event {
+    font-size: 0.75rem;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.125rem;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Statistiche */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3b82f6;
+}
+
+.stat-card.warning {
+    border-left-color: #f59e0b;
+}
+
+.stat-card.danger {
+    border-left-color: #ef4444;
+}
+
+.stat-card.success {
+    border-left-color: #10b981;
+}
+
+/* Modal Styles */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-container {
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .modal-container {
+        margin: 1rem;
+        max-height: 80vh;
+    }
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f4f6;
+    border-top: 2px solid #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .calendar-grid {
+        grid-template-columns: 80px repeat(7, 1fr);
+        font-size: 0.875rem;
+    }
+    
+    .calendar-time {
+        font-size: 0.75rem;
+        padding: 0.25rem;
+    }
+    
+    .month-day {
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .calendar-grid {
+        grid-template-columns: 60px repeat(7, 1fr);
+    }
+    
+    .lezione-card {
+        font-size: 0.75rem;
+        padding: 0.25rem;
+    }
+    
+    .month-day {
+        min-height: 80px;
+        font-size: 0.75rem;
+        padding: 0.25rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Utility Classes */
+.max-h-90vh {
+    max-height: 90vh;
+}
+
+.min-h-16 {
+    min-height: 4rem;
+}
+
+.min-h-32 {
+    min-height: 8rem;
+}
+
+/* Color Utilities for Status */
+.bg-limit-ok {
+    background-color: #dcfce7;
+    border-color: #16a34a;
+}
+
+.bg-limit-warning {
+    background-color: #fef3c7;
+    border-color: #d97706;
+}
+
+.bg-limit-danger {
+    background-color: #fee2e2;
+    border-color: #dc2626;
+}

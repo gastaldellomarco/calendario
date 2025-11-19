@@ -1,0 +1,5 @@
+/* Placeholder style.css - imports calendatio.css or adds minimal fallback styles */
+@import url('calendario.css');
+
+/* Fallback default */
+body { font-family: Arial, sans-serif; }
